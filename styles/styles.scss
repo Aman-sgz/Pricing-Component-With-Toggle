@@ -1,0 +1,180 @@
+@import'normalize.css';
+
+// Colores Neutrales
+$very_light_grayish_blue: hsl(240, 78%, 98%);
+$light_grayish_blue: hsl(234, 14%, 74%);
+$grayish_blue: hsl(233, 13%, 49%);
+$dark_grayish_blue: hsl(232, 13%, 33%);
+$white: #fff;
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+$montserrat: 'Montserrat', sans-serif;
+
+
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: $montserrat, sans serif;
+    font-size: 15px;
+    background-color: $very_light_grayish_blue;
+}
+
+
+.container {
+    background-image: url(/images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 180px -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    z-index: 100;
+}
+
+/* Sections
+-------------------------------------------------------------------------------*/
+.section-basics, .section-professional, .section-master {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    color: $grayish_blue;
+    background-color: $very_light_grayish_blue;
+}
+
+.section-professional {
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: $white;
+}
+
+
+/* Titles
+------------------------------------------------------------------------------ */
+.header__title {
+    color: $grayish_blue;
+    text-align: center;
+    margin: 3rem;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+.header__content p{
+    margin: 0.5rem 1rem;
+}
+
+.basics__title, .master__title {
+    color: $grayish_blue;
+} 
+
+/* Prices
+------------------------------------------------------------------------------  */
+
+.basics__price--monthly, .master__price--monthly {
+    font-size: 3rem;
+    color: $dark_grayish_blue;
+}
+
+.professional__price--monthly{
+    font-size: 3rem;
+    color: $white;
+}
+
+/* Details
+---------------------------------------------------------------------------------*/
+.section-basics, .text {
+    border-bottom: 1px solid $light_grayish_blue;
+    width: 85%;
+    text-align: center;
+   margin-top: 0.5rem;
+   padding-bottom: 1rem;
+}
+
+/* Buttons 
+---------------------------------------------------------------------------------*/
+.btn__learn {
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: $very_light_grayish_blue;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    width: 70%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 0.5px solid $light_grayish_blue;
+}
+
+/* Switch
+---------------------------------------------------------------------------------*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}

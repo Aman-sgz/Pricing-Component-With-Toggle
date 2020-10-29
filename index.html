@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -16,33 +17,50 @@
 </head>
 <body>
 
-  Our Pricing
-  Annually
-  Monthly
+  <div class= "container">
+    <header>
+      <h1 class="header__title">Our Pricing</h1>
+      <div class="header__content">
+        <p>Annually</p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <p>Monthly</p>
+      </div>
+    </header>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+    <section class= "section-basics">
+      <h2 class="basics__title">Basic</h2>
+      <p class="basics__price--monthly">&dollar;19.99</p>
+      <p class="basics__price--anually">&dollar;199.99</p>
+      <p class="text">500 GB Storage</p>
+      <p class="text">2 Users Allowed</p>
+      <p class="text">Send up to 3 GB</p>
+      <button class="btn__learn">Learn More</button>
+    </section>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+    <section class= "section-professional">
+      <h2 class= "professional__title">Professional</h2>
+      <p class="professional__price--monthly">&dollar;24.99</p>
+      <p class="professional__price--anually">&dollar;249.99</p>
+      <p class="text">1 TB Storage</p>
+      <p class="text">5 Users Allowed</p>
+      <p class="text">Send up to 10 GB</p>
+      <button class="btn__learn">Learn More</button>
+    </section>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+    <section class= "section-master">
+      <h2 class="master__title">Master</h2>
+      <p class="master__price--monthly">&dollar;39.99</p>
+      <p class="master__price--anually">&dollar;399.99</p>
+      <p class="text">2 TB Storage</p>
+      <p class="text">10 Users Allowed</p>
+      <p class="text">Send up to 20 GB</p>
+      <button class="btn__learn">Learn More</button>
+    </section>
+  </div>
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
