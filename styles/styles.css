@@ -18,9 +18,9 @@ body {
 @media screen and (min-width: 1200px) {
   body {
     background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
-    background-size: 100%, 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 50%, 0 50%;
+    background-position: right top, left bottom;
+    background-size: 30%, 30%;
     background-color: #f6f6fe;
   }
 }
@@ -41,10 +41,16 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -71,6 +77,14 @@ body {
   border-radius: 10px;
   color: #6d708d;
   background-color: #F9FCFB;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-basics,
+  .section-professional,
+  .section-master {
+    width: 20%;
+  }
 }
 
 .section-professional {
