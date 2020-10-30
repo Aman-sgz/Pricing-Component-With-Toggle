@@ -20,7 +20,7 @@ body {
     background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: right top, left bottom;
-    background-size: 30%, 30%;
+    background-size: 20%, 20%;
     background-color: #f6f6fe;
   }
 }
@@ -83,13 +83,13 @@ body {
   .section-basics,
   .section-professional,
   .section-master {
-    width: 20%;
+    width: 25%;
   }
 }
 
 .section-professional {
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#696fdd), to(#a3a8f0));
+  background-image: linear-gradient(to left top, #696fdd, #a3a8f0);
   color: #fff;
 }
 
@@ -205,10 +205,8 @@ body {
 
 /* Buttons 
 ---------------------------------------------------------------------------------*/
-.btn__learn {
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
-  color: #f6f6fe;
+.btn__learn--blue,
+.btn__learn--white {
   text-transform: uppercase;
   font-size: 0.6rem;
   font-weight: bold;
@@ -217,7 +215,30 @@ body {
   width: 90%;
   padding: 0.8rem 0.5rem;
   margin: 1rem 0;
-  border: 0.5px solid #b3b5c6;
+  color: #F9FCFB;
+  border-color: #a3a8f0;
+}
+
+.btn__learn--blue {
+  background-color: #696fdd;
+}
+
+.btn__learn--white {
+  background-color: #fff;
+  color: #696fdd;
+}
+
+.btn__learn--blue:hover {
+  background-color: #F9FCFB;
+  color: #696fdd;
+  cursor: pointer;
+}
+
+.btn__learn--white:hover {
+  background-color: #696fdd;
+  color: #F9FCFB;
+  border: 1px solid #f6f6fe;
+  cursor: pointer;
 }
 
 /* Switch
