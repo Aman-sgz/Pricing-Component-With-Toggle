@@ -132,7 +132,7 @@ body {
     padding-top: 2rem;
     margin-left: -10%;
     margin-right: -10%;
-    height: 73vh;
+    height: 70vh;
     z-index: 100;
   }
 }
@@ -145,7 +145,7 @@ body {
 ------------------------------------------------------------------------------  */
 .card__price {
   font-size: 3rem;
-  color: #6d708d;
+  color: #494c5f;
   margin: 1rem;
 }
 
@@ -157,36 +157,18 @@ body {
 
 /* Details
 ---------------------------------------------------------------------------------*/
-.card p:nth-child(4) {
+.card__list {
+  list-style-type: none;
   border-top: 1px solid #b3b5c6;
+  padding: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.card__list .details {
   border-bottom: 1px solid #b3b5c6;
+  margin: 0 auto;
   padding: 1rem;
-  width: 75%;
-  text-align: center;
-}
-
-.card p:nth-last-child(-n+3) {
-  border-bottom: 1px solid #b3b5c6;
-  margin-top: 0;
-  padding: 1rem;
-  width: 75%;
-  text-align: center;
-}
-
-.card-blue p:nth-child(4) {
-  border-top: 1px solid #f6f6fe;
-  border-bottom: 1px solid #f6f6fe;
-  padding: 1rem;
-  width: 75%;
-  text-align: center;
-}
-
-.card-blue p:nth-last-child(-n+3) {
-  border-bottom: 1px solid #f6f6fe;
-  margin-top: 0;
-  padding: 1rem;
-  width: 75%;
-  text-align: center;
 }
 
 .card .monthly {
@@ -205,7 +187,7 @@ body {
 ---------------------------------------------------------------------------------*/
 .card__btn--white,
 .card__btn--blue {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: bold;
   letter-spacing: 2px;
   border-radius: 5px;

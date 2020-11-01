@@ -102,7 +102,7 @@ body {
         padding-top: 2rem;
         margin-left: -10%;
         margin-right: -10%;
-        height: 73vh;
+        height: 70vh;
         z-index: 100;
     }
 }
@@ -111,11 +111,11 @@ body {
     color: $grayish_blue;
 } 
 
-/*
+/* Prices
 ------------------------------------------------------------------------------  */
 .card__price {
     font-size: 3rem;
-    color: $grayish_blue;
+    color: $dark_grayish_blue;
     margin: 1rem;
 }
 
@@ -127,38 +127,19 @@ body {
 
 /* Details
 ---------------------------------------------------------------------------------*/
-.card p:nth-child(4) {
+.card__list {
+    list-style-type: none;
     border-top: 1px solid $light_grayish_blue;
-    border-bottom: 1px solid $light_grayish_blue;
-    padding: 1rem;
-    width: 75%;
+    padding: 0;
     text-align: center;
-}
+    width: 90%;
 
-.card p:nth-last-child(-n+3) {
-    border-bottom: 1px solid $light_grayish_blue;
-    margin-top: 0;
-    padding: 1rem;
-    width: 75%;
-    text-align: center;
+    .details{
+        border-bottom: 1px solid $light_grayish_blue;
+        margin: 0 auto;
+        padding: 1rem;
+        }
 }
-
-.card-blue p:nth-child(4) {
-    border-top: 1px solid $very_light_grayish_blue;
-    border-bottom: 1px solid $very_light_grayish_blue;
-    padding: 1rem;
-    width: 75%;
-    text-align: center;
-}
-
-.card-blue p:nth-last-child(-n+3) {
-    border-bottom: 1px solid $very_light_grayish_blue;
-    margin-top: 0;
-    padding: 1rem;
-    width: 75%;
-    text-align: center;
-}
-
 
 // Classes for toggle
 .card .monthly {
@@ -177,7 +158,7 @@ body {
 ---------------------------------------------------------------------------------*/
 .card__btn--white,
 .card__btn--blue {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 2px;
     border-radius: 5px;
