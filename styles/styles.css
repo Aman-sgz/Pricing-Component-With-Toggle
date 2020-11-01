@@ -171,16 +171,16 @@ body {
   padding: 1rem;
 }
 
-.card .annually {
+.card .monthly {
   display: none;
 }
 
 .show-annually .card .annually {
-  display: block;
+  display: none;
 }
 
 .show-annually .card .monthly {
-  display: none;
+  display: block;
 }
 
 /* Buttons 
