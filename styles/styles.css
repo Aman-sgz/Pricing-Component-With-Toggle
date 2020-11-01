@@ -171,15 +171,15 @@ body {
   padding: 1rem;
 }
 
-.card .monthly {
+.card .annually {
   display: none;
 }
 
-.show-monthly .card .monthly {
+.show-annually .card .annually {
   display: block;
 }
 
-.show-monthly .card .annually {
+.show-annually .card .monthly {
   display: none;
 }
 
