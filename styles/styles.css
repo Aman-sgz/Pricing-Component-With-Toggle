@@ -432,7 +432,7 @@ body {
   font-size: 11px;
   text-align: center;
   color: #b3b5c6;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 .attribution a {
