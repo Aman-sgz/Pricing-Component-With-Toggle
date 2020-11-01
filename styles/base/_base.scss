@@ -1,0 +1,62 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: $main-font, "sans-serif";
+    font-size: 15px;
+    margin: 0;
+    background-image: url(../images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 180px -50px;
+    background-color: $very_light_grayish_blue;
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right top, left bottom;
+        background-size: 20%, 20%;
+    }
+}
+
+/* Header
+------------------------------------------------------------------------------ */
+.header__title {
+    color: $grayish_blue;
+    text-align: center;
+    margin: 3rem;
+
+    @media screen and (min-width: 1200px) {
+        margin: 2rem;
+    }
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-evenly;
+        margin: 2rem 30rem;
+    }
+}
+
+.header__content p {
+    margin: 0.5rem 1rem;
+    color: $light_grayish_blue;
+}
+
+/* Attribution
+--------------------------------------------------------------------------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $light_grayish_blue;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

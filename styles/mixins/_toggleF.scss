@@ -1,0 +1,12 @@
+// Classes for toggle
+.card .monthly {
+    display: none;
+}
+
+.show-annually .card .annually {
+    display: none;
+}
+
+.show-annually .card .monthly {
+    display: block;
+}
