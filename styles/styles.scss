@@ -1,17 +1,14 @@
 @import'normalize.css';
 
-// Colores Neutrales
 $very_light_grayish_blue: hsl(240, 78%, 98%);
 $light_grayish_blue: hsl(234, 14%, 74%);
 $grayish_blue: hsl(233, 13%, 49%);
 $dark_grayish_blue: hsl(232, 13%, 33%);
-$white: #fff;
-$white2: #F9FCFB;
+$white: #F9FCFB;
 
 // Typography
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 $montserrat: 'Montserrat', sans-serif;
-
 
 
 html {
@@ -33,59 +30,10 @@ body {
         background-repeat: no-repeat, no-repeat;
         background-position: right top, left bottom;
         background-size: 20%, 20%;
-        background-color: $very_light_grayish_blue;
     }
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 100;
-
-    @media screen and (min-width: 1200px){
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-/* Sections
--------------------------------------------------------------------------------*/
-.section-basics, 
-.section-professional, 
-.section-master {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 1.5rem;
-    padding: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
-    color: $grayish_blue;
-    background-color: $white2;
-
-    @media screen and (min-width: 1200px) {
-        width: 25%;
-    }
-}    
-
-
-.section-professional {
-    background-image: linear-gradient(to left top,  hsl(237, 63%, 64%), hsl(236, 72%, 79%));
-    color: $white;
-
-    @media screen and (min-width: 1200px) {
-        height: 70vh;
-        padding-top: 2.5rem;
-        margin-left: -30px; //trasnlateX ?
-        margin-right: -30px;
-        z-index: 100;
-    }
-}
-
-/* Titles
+/* Header
 ------------------------------------------------------------------------------ */
 .header__title {
     color: $grayish_blue;
@@ -95,124 +43,178 @@ body {
 
 .header__content {
     display: flex;
-    justify-content: space-between;
-    margin: 3rem 2.5rem;
+    justify-content: space-evenly;
+    margin: 2rem auto;
 
     @media screen and (min-width: 1200px) {
         justify-content: space-evenly;
         margin: 3rem 25rem;
     }
 }
-.header__content p{
+
+.header__content p {
     margin: 0.5rem 1rem;
     color: $light_grayish_blue;
 }
 
-.basics__title, .master__title {
+/* Sections
+-------------------------------------------------------------------------------*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        display: flex; 
+        flex-direction: row;
+    }
+}
+
+.card,
+.card-blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 5px $light_grayish_blue;
+    border-radius: 10px;
+    color: $grayish_blue;
+    background-color: $white;
+
+    @media screen and (min-width: 700px) {
+        width: 60%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 25%;
+    }
+} 
+
+.card-blue {
+    background-image: linear-gradient(to left top,  hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+    color: $white;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 2rem;
+        margin-left: -10%;
+        margin-right: -10%;
+        height: 73vh;
+        z-index: 100;
+    }
+}
+
+.card__title {
     color: $grayish_blue;
 } 
 
-/* Prices
+/*
 ------------------------------------------------------------------------------  */
-.basics__price--monthly, .master__price--monthly {
+.card__price {
     font-size: 3rem;
     color: $grayish_blue;
     margin: 1rem;
 }
 
-.professional__price--monthly{
+.card-blue__price{
     font-size: 3rem;
     color: $white;
     margin: 1rem;
-}
-
-.basics__price--anually, .master__price--anually {
-    font-size: 3rem;
-    color: $grayish_blue;
-    margin: 1rem;
-    display: none;
-}
-
-.professional__price--anually{
-    font-size: 3rem;
-    color: $white;
-    margin: 1rem;
-    display: none;
 }
 
 /* Details
 ---------------------------------------------------------------------------------*/
-.section-basics p:nth-child(4),
-.section-master p:nth-child(4) {
+.card p:nth-child(4) {
     border-top: 1px solid $light_grayish_blue;
     border-bottom: 1px solid $light_grayish_blue;
     padding: 1rem;
-    width: 80%;
+    width: 75%;
     text-align: center;
 }
 
-.section-basics p:nth-last-child(-n+3),
-.section-master p:nth-last-child(-n+3) {
+.card p:nth-last-child(-n+3) {
     border-bottom: 1px solid $light_grayish_blue;
     margin-top: 0;
-    padding-bottom: 1rem;
-    width: 90%;
+    padding: 1rem;
+    width: 75%;
     text-align: center;
 }
 
-.section-professional p:nth-child(4) {
+.card-blue p:nth-child(4) {
     border-top: 1px solid $very_light_grayish_blue;
     border-bottom: 1px solid $very_light_grayish_blue;
     padding: 1rem;
-    width: 80%;
+    width: 75%;
     text-align: center;
 }
 
-.section-professional p:nth-last-child(-n+3) {
+.card-blue p:nth-last-child(-n+3) {
     border-bottom: 1px solid $very_light_grayish_blue;
     margin-top: 0;
-    padding-bottom: 1rem;
-    width: 90%;
+    padding: 1rem;
+    width: 75%;
     text-align: center;
+}
+
+
+// Classes for toggle
+.card .monthly {
+    display: none;
+}
+
+.show-monthly .card .monthly {
+    display: block;
+}
+
+.show-monthly .card .annually {
+    display: none;
 }
 
 /* Buttons 
 ---------------------------------------------------------------------------------*/
-
-.btn__learn--blue,
-.btn__learn--white {
-   text-transform: uppercase;
-   font-size: 0.6rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   border-radius: 5px;
-   width: 90%;
-   padding: 0.8rem 0.5rem;
-   margin: 1rem 0;
-   color: $white2;
-   border-color: hsl(236, 72%, 79%);
+.card__btn--white,
+.card__btn--blue {
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0.8rem 0.5rem;
+    margin: 1rem 0;
+    color: $white;
+    width: 90%;
 }
 
-.btn__learn--blue {
-    background-color: hsl(237, 63%, 64%);
-}
-
-.btn__learn--white {
+.card__btn--white {
     background-color: $white;
     color: hsl(237, 63%, 64%);
+    border: 1px solid  $white;
+
+    @media screen and (min-width: 992px) {
+        &:hover {
+            background-image: linear-gradient(to left top,  hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+            border: 1px solid $very_light_grayish_blue;
+            color: $white;
+            cursor: pointer;
+        }
+    }
 }
 
-.btn__learn--blue:hover {
-    background-color: $white2;
-    color: hsl(237, 63%, 64%);
-    cursor: pointer;
-}
+.card__btn--blue {
+    background-image: linear-gradient(to left top, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+    border: 1px solid hsl(236, 72%, 79%);
 
-.btn__learn--white:hover {
-    background-color: hsl(237, 63%, 64%);
-    color: $white2;
-    border: 1px solid $very_light_grayish_blue;
-    cursor: pointer;
+    @media screen and (min-width: 992px) {
+        &:hover {
+            background-image: linear-gradient($white, $white);
+            border: 1px solid hsl(237, 63%, 64%);
+            color: hsl(237, 63%, 64%);
+            cursor: pointer;
+        }
+    }
 }
 
 /* Switch
@@ -231,27 +233,25 @@ body {
 }
 
 .slider {
-position: absolute;
-cursor: pointer;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ccc;
--webkit-transition: .4s;
-transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transition: .4s;
 }
 
 .slider:before {
-position: absolute;
-content: "";
-height: 26px;
-width: 26px;
-left: 4px;
-bottom: 4px;
-background-color: white;
--webkit-transition: .4s;
-transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
 }
 
 input:checked + .slider {
@@ -263,16 +263,26 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
--webkit-transform: translateX(26px);
--ms-transform: translateX(26px);
-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Attribution
+--------------------------------------------------------------------------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $light_grayish_blue;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
