@@ -252,8 +252,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dedff7), to(#5760db));
-  background-image: linear-gradient(to right, #dedff7, #5760db);
+  background-image: -webkit-gradient(linear, left top, right top, from(#9da0f1), to(#5760db));
+  background-image: linear-gradient(to right, #9da0f1, #5760db);
   -webkit-transition: .4s;
   transition: .4s;
 }
