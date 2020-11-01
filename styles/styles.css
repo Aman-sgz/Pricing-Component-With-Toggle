@@ -141,7 +141,7 @@ body {
   color: #6d708d;
 }
 
-/*
+/* Prices
 ------------------------------------------------------------------------------  */
 .card__price {
   font-size: 3rem;
@@ -252,8 +252,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  background-image: -webkit-gradient(linear, left top, right top, from(#babdf7), to(#9699ee));
+  background-image: linear-gradient(to right, #babdf7, #9699ee);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -271,8 +271,8 @@ body {
 }
 
 input:checked + .slider {
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  background-image: -webkit-gradient(linear, left top, right top, from(#dedff7), to(#a3a8f0));
+  background-image: linear-gradient(to right, #dedff7, #a3a8f0);
 }
 
 input:focus + .slider {

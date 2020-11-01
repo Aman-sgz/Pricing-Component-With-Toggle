@@ -220,7 +220,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient(to right, hsl(237, 80%, 85%), hsl(238, 72%, 76%));
     transition: .4s;
 }
 
@@ -236,7 +236,7 @@ body {
 }
 
 input:checked + .slider {
-    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient(to right, hsl(238, 62%, 92%), hsl(236, 72%, 79%));
 }
 
 input:focus + .slider {
