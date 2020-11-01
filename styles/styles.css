@@ -104,7 +104,7 @@ body {
           box-shadow: 0 4px 5px #b3b5c6;
   border-radius: 10px;
   color: #6d708d;
-  background-color: #F9FCFB;
+  background-color: #fdfdff;
 }
 
 @media screen and (min-width: 700px) {
@@ -124,7 +124,7 @@ body {
 .card-blue {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#696fdd), to(#a3a8f0));
   background-image: linear-gradient(to left top, #696fdd, #a3a8f0);
-  color: #F9FCFB;
+  color: #fdfdff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -151,7 +151,7 @@ body {
 
 .card-blue__price {
   font-size: 3rem;
-  color: #F9FCFB;
+  color: #fdfdff;
   margin: 1rem;
 }
 
@@ -212,14 +212,14 @@ body {
   text-transform: uppercase;
   padding: 0.8rem 0.5rem;
   margin: 1rem 0;
-  color: #F9FCFB;
+  color: #fdfdff;
   width: 90%;
 }
 
 .card__btn--white {
-  background-color: #F9FCFB;
+  background-color: #fdfdff;
   color: #696fdd;
-  border: 1px solid #F9FCFB;
+  border: 1px solid #fdfdff;
 }
 
 @media screen and (min-width: 992px) {
@@ -227,7 +227,7 @@ body {
     background-image: -webkit-gradient(linear, right bottom, left top, from(#696fdd), to(#a3a8f0));
     background-image: linear-gradient(to left top, #696fdd, #a3a8f0);
     border: 1px solid #f6f6fe;
-    color: #F9FCFB;
+    color: #fdfdff;
     cursor: pointer;
   }
 }
@@ -240,8 +240,8 @@ body {
 
 @media screen and (min-width: 992px) {
   .card__btn--blue:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#F9FCFB), to(#F9FCFB));
-    background-image: linear-gradient(#F9FCFB, #F9FCFB);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdff), to(#fdfdff));
+    background-image: linear-gradient(#fdfdff, #fdfdff);
     border: 1px solid #696fdd;
     color: #696fdd;
     cursor: pointer;
