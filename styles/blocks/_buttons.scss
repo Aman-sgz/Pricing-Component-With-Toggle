@@ -9,6 +9,10 @@
     margin: 1rem 0;
     color: $white;
     width: 90%;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .card__btn--white {

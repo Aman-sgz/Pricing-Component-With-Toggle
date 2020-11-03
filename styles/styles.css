@@ -566,6 +566,11 @@ body {
   width: 90%;
 }
 
+.card__btn--white:focus,
+.card__btn--blue:focus {
+  outline: none;
+}
+
 .card__btn--white {
   background-color: #fdfdff;
   color: #696fdd;
