@@ -3,11 +3,11 @@
   display: none;
 }
 
-.show-annually .card .annually {
+.show-monthly .card .annually {
   display: none;
 }
 
-.show-annually .card .monthly {
+.show-monthly .card .monthly {
   display: block;
 }
 
