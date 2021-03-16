@@ -40,7 +40,7 @@
 
 - Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-- You can see a live site at [Profile Card Component](https://pricing-component-with-toggle-brown.vercel.app/)
+- You can see a live site at [Pricing component with toggle](https://pricing-component-with-toggle-brown.vercel.app/)
 
 
 
